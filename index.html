@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Personalwebsite</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    <link rel="stylesheet" href="aulter.css">
+</head>
+<body>
+    <!--nav-->
+   
+ <div class="container-fluid">
+
+     <nav>
+        <a href="#home" class="logo" >Rishad </a>
+ 
+        
+    
+        <ul id="menuList">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+ 
+    </ul>
+           <div class="menu-icon">
+        <i class="bx bx-menu" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px"; 
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+        }
+
+    </script>
+
+<!--Home-->
+
+
+ <section class="Home" id="home">
+    <div class="row">
+        <div class="col-md-6">    
+    <img src="img/file_000000004c68720b895c4e602989a7c4.png" class="img-fluid" alt="profile image">
+    </div>
+    <div class="col-md-6">
+ <h2>Hi I'm </h2>
+ <h1>Rishad</h1>
+ <p>Passionate Web Developer with a strong interest in creating responsive, user-friendly websites. Always learning, improving, and building modern web experiences.</p>
+</div>
+</div>
+</section>
+
+
+<!--About-->
+ <section class="About" id="about">
+    <h1><center>About Me</center></h1>
+    <div class=" text-center">
+        <div class="about-img">
+        <img src="img/IMG_20260715_160448.png" class="img-fluid" alt="about image" >
+        </div>
+    </div>
+    <div class="paragraph">
+        
+        <p1><center>I'm Rishad, a passionate and dedicated Web Developer with a strong interest in designing and developing responsive, user-friendly, and modern websites. I graduated from Yenepoya University in 2025, where I built a solid foundation in web development and software engineering. I enjoy turning ideas into functional and visually appealing websites using HTML, CSS, Bootstrap, and JavaScript.
+
+<br>I believe in writing clean, organized, and efficient code while continuously learning new technologies and improving my technical skills. I enjoy solving real-world problems, exploring modern web development practices, and building projects that provide a great user experience. My goal is to grow as a professional web developer, contribute to innovative projects, and create websites that are both attractive and high-performing.</center></p1>
+    <br>
+</div>
+ 
+ </section>
+
+
+ <!--skill-->
+ <section class="Skills" id="skills">
+    <head><h1><center>My Skills</center></h1></head>
+    <div class="skills-container">
+
+        <div class="skill-box">
+            <i class="bx bx code"></i>
+            <h2>FRONT END</h2>
+            <p>httml<br></p>
+            <p>css<br></p>
+            <p>bootstrap<br></p>
+            <p>javascript<br></p>
+        </div>
+
+        <div class="skill-box">
+            <i class="bx bx code"></i>
+            <h2>TOOLS</h2>
+            <p>git<br></p>
+            <p>github<br></p>
+            <p>vs code<br></p>
+            <p>Figma<br></p>
+        </div>
+
+        <div class="skill-box">
+            <i class="bx bx code"></i>
+            <h2>RESPONSIVE UI</h2>
+            <p>Mobile First<br></p>
+            <p>Flexbox<br></p>
+            <p>Bootstrap Grid<br></p>
+             <p>Media Queries<br></p>
+            
+        </div>
+
+
+    </div>
+    
+    
+
+ </section>
+
+ <!--services-->
+
+ <section class="Services" id="services">
+    <head><h1><center>Services</center></h1></head>
+    <div class="service-container">
+
+        <div class="service-box">
+             <i class="bx bx code"></i>
+            <h2>Web Development</h2>
+            <p>I create modern, responsive, and user-friendly websites that look great on all devices and provide an excellent user experience.</p>
+        </div>
+
+           <div class="service-box">
+             <i class="bx bx code"></i>
+            <h2>UI/UX Design</h2>
+            <p>I design clean and intuitive user interfaces with a focus on usability, accessibility, and creating smooth user experiences.</p>
+        </div>
+
+   <div class="service-box">
+             <i class="bx bx code"></i>
+            <h2>App Development</h2>
+            <p>I build responsive and scalable mobile applications with a focus on performance, functionality, and user satisfaction.</p>
+        </div>
+
+    </div>
+
+
+ </section>
+
+ <!--contact-->
+
+ <section class="Contact" id="contact">
+<head><h1><center>Contact Me</center></h1></head>
+<form action="#">
+    <div class="input-box">
+        <input type="text" placeholder="Name">
+        <input type="email" name="Email" placeholder="Email Addres">
+    </div>
+    <div class="input-box">
+    <input type="number" placeholder="Phone Number">
+    <input class="text" placeholder="Email Subject">
+</div>
+    <textarea name="messege" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="botton">
+    
+</form>
+ </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
+    </div>
+</body>
+</html>
